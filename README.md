@@ -10,7 +10,7 @@ Pokedex helps Pokemon trainers to look up detailed information on each Pokemon, 
         |-- images          # Images
         |-- index.html      # entry point for browser
     |-- src
-        |-- components      # All components and containers used in this project.
+        |-- components      # All components, containers, and stories used in this project.
         |-- data            # Json data for all pokemons info
         |-- styles          # CSS files for styling components
         |-- tests           # Test files
@@ -40,4 +40,8 @@ The web page will display a grid of all Pokemons with pagination. Trainers can a
 Run `npm test`
 ### Test Results
 ![alt text](./test-result.png)
-### *Notes: node version may cause error while running the test suites, in order to run tests, you can update your node version up to v19.8.1*
+
+*Notes: node version may cause error while running the test suites, in order to run tests, you can update your node version up to v19.8.1*
+
+## Storybook
+Run `npm run storybook`, you can access it by navigating to [http://localhost:6006](http://localhost:6006) in the web browser 
