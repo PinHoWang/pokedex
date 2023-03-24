@@ -3,6 +3,7 @@ import './styles/App.css';
 import PokemonCard from "./components/PokemonCard";
 import pokedexData from './data/pokedex.json';
 import { mapPokemonIdToImageFilename } from "./utilities";
+import PokemonCardContainer from "./components/PokemonCardContainer";
 
 function App() {
   const [data, setData] = useState([]);
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <h1>Pokedex</h1>
-      <>
+      <PokemonCardContainer>
       {
         data.map((pokemon, index) => (
           <PokemonCard 
@@ -26,7 +27,7 @@ function App() {
           />
         ))
       }
-      </>
+      </PokemonCardContainer>
     </div>
   );
 }
