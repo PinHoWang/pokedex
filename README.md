@@ -4,6 +4,21 @@
 ## Introduction
 Pokedex helps Pokemon trainers to look up detailed information on each Pokemon, including species name, type, and image.
 
+## Top-level Directory Layout
+    .
+    |-- public              # Assets
+        |-- images          # Images
+        |-- index.html      # entry point for browser
+    |-- src
+        |-- components      # All components and containers used in this project.
+        |-- data            # Json data for all pokemons info
+        |-- styles          # CSS files for styling components
+        |-- tests           # Test files
+        |-- App.js          # Root component
+        |-- index.js        # Index file for React component rendering
+        |-- utilities.js    # Utilities
+        
+
 ## Installation
 To install the Pokedex application, follow these steps:
 1. Clone the repository to the local machine.
