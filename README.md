@@ -19,7 +19,7 @@ The web page will display a grid of all Pokemons with pagination. Trainers can a
 2. Filter pokemons by their types
 
 ## Screenshot
-<img src='./page.png' alt='page' width='500' height='300'>
+![alt text](./page.png)
 
 ## Tests
 Run `npm test`
