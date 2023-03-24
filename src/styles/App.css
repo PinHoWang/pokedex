@@ -1,3 +1,11 @@
 .App {
   text-align: center;
 }
+
+.input-area {
+  margin-bottom: 20px;
+}
+
+.input-area span {
+  margin-left: 10px;
+}
