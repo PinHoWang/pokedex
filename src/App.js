@@ -25,6 +25,16 @@ function App() {
     pokemon.type.filter(pokemonType => pokemonType.toLowerCase().includes(typeFilter.toLowerCase())).length !== 0
   );
 
+  const handleOnChangeNameFilter = (e) => {
+    setNameFilter(e.target.value);
+    setCurrentPage(1);
+  };
+
+  const handleOnChangeTypeFilter = (e) => {
+    setTypeFilter(e.target.value);
+    setCurrentPage(1);
+  };
+
   /* Pagination */
   const totalPage = Math.ceil(filteredData.length / pokemonsPerPage);
   const indexOfLastItem = currentPage * pokemonsPerPage;
@@ -36,9 +46,9 @@ function App() {
       <h1>Pokedex</h1>
       <div className="input-area">
         <span>Filter by name: </span>
-        <input type="text" placeholder="Filter by name" onChange={(e) => setNameFilter(e.target.value)} />
+        <input type="text" placeholder="Filter by name" onChange={handleOnChangeNameFilter} />
         <span>Filter by type: </span>
-        <input type="text" placeholder="Filter by type" onChange={(e) => setTypeFilter(e.target.value)} />
+        <input type="text" placeholder="Filter by type" onChange={handleOnChangeTypeFilter} />
       </div>
       <PaginationContainer
         currentPage={currentPage}
