@@ -40,4 +40,4 @@ The web page will display a grid of all Pokemons with pagination. Trainers can a
 Run `npm test`
 ### Test Results
 ![alt text](./test-result.png)
-### *Notes: node version may cause error while running the test suites, in order to run tests, you can update your node version up to v19.81*
+### *Notes: node version may cause error while running the test suites, in order to run tests, you can update your node version up to v19.8.1*
