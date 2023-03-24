@@ -45,3 +45,8 @@ Run `npm test`
 
 ## Storybook
 Run `npm run storybook`, you can access it by navigating to [http://localhost:6006](http://localhost:6006) in the web browser 
+
+*Notes: If you got the `digital envelope routines::unsupported` error. You can run below command in the terminal to resolve this problem.
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
