@@ -1,0 +1,17 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: #EDE9FE;
+    color: #2a7151;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.badge__text {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 120px;
+}

@@ -22,7 +22,7 @@ describe('PokemonCard', () => {
         expect(imageField).toBeInTheDocument();
 
         // types shoudl be displayed
-        const typesField = screen.getAllByTestId('type');
+        const typesField = screen.getAllByTestId('badge');
         expect(typesField.length).toBe(types.length);
         typesField.forEach((typeField, index) => {
             expect(typeField).toHaveTextContent(types[index]);

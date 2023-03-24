@@ -9,3 +9,7 @@
 .pokemon-card img {
     max-width: 100%;
 }
+
+.badges-row {
+    margin-top: 10px;
+}
